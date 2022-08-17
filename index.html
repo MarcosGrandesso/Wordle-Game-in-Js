@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://css.gg/backspace.css' rel='stylesheet'>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>D4</title>
+</head>
+<body>
+<header>
+    <h1>Wordle</h1>
+    <hr>
+    </header>
+    <div class="jogo" id="quadrados">
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+        <div class="caixa-jogo vazio"></div>
+    </div>
+
+    <div class="teclado">
+        <div class="linha-teclado">
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">Q</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">W</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">E</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">R</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">T</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">Y</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">U</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">I</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">O</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">P</button>
+        </div>
+        <div class="linha-teclado">
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">A</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">S</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">D</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">F</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">G</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">H</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">J</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">K</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">L</button>
+        </div>
+        <div class="linha-teclado">
+            <button class="caixa-teclado outros btn-especial">ENTER</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">Z</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">X</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">C</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">V</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">B</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">N</button>
+            <button class="caixa-teclado outros" onclick="inserindo_letra(this)">M</button>
+            <button class="caixa-teclado outros btn-especial" onclick="apagar()"><i class="gg-backspace"></i></div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
