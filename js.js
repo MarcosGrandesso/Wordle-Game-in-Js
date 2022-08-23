@@ -85,7 +85,13 @@ function inserindo_letra(letra_digitada) {
             setTimeout(() => {
               startConfetti();
               ganhou = true
-              window.alert("voce acertou a palavra");
+              function abreModal() {
+                $("#myModal").modal({
+                  show: true
+                });
+              }
+              
+              setTimeout(abreModal, 300);
               //colorindo os quadradin para caso de vitoria
               let quadradinhos = document.querySelectorAll("div.vazio");
               for (let i = ini_acerto; i < fin_acerto; i++) {

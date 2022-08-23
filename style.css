@@ -34,7 +34,12 @@ header > h1 {
     margin: 3px;
     border: 1px solid #c8cace;
 }
-
+/* .modal-dialog {
+    margin-top: 300px;
+} */
+.modalzin {
+    margin-top: 300px;
+}
 .jogo {
     font-size: 0;
     width: 320px;
