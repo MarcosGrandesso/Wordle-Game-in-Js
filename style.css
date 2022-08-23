@@ -15,6 +15,11 @@ header > h1 {
     font-size: 36px;
 }
 
+#confetti-canvas{
+    position: absolute;
+    top: 0;
+}
+
 .caixa-jogo {
     display: inline-block;
     width: 1em;
