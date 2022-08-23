@@ -11,7 +11,7 @@ let wordList = {
     '2482022':'AROMA',
     '2582022':'FUNFA'
 }
-
+let ganhou = false
 let palavra_real = wordList[dataParsed];
 let n = 1;
 let ini_count = 0;
@@ -34,8 +34,8 @@ function inserindo_letra(letra_digitada) {
 
   for (let count = ini_count; count < fin_count; count++) {
     a = letra_digitada.innerHTML; // letra tratada
-    if (quadrados[count].innerHTML == "") {
-      if (a && alfabeto.includes(a) && palavra_usuario.length < 5) {
+    if (quadrados[count].innerHTML == "" && !ganhou) {
+      if (a && alfabeto.includes(a) && palavra_usuario.length < 5 ) {
         quadrados[count].innerHTML = a; //nesse bloco de codigo ele verifica se o quadradinho atual nao esta preenchido e preenche com o conteudo da variavel a com a letra tratada
         if (palavra_usuario.includes(a)) {
           palavra_usuario2.push("-");
@@ -84,7 +84,7 @@ function inserindo_letra(letra_digitada) {
             palavra_usuario2 = [];
             setTimeout(() => {
               startConfetti();
-              
+              ganhou = true
               window.alert("voce acertou a palavra");
               //colorindo os quadradin para caso de vitoria
               let quadradinhos = document.querySelectorAll("div.vazio");
@@ -170,7 +170,6 @@ const tecladinho = document.querySelectorAll(".caixa-teclado");
 function pintaTecladoAmarelo(letraUser, cor) {
   for (letra of tecladinho) {
     if (letra.innerHTML == letraUser) {
-      console.log("chegou aqui ");
       if (cor == "verde") {
         letra.classList.remove("outros");
         letra.classList.remove("meio-certo")
@@ -211,7 +210,6 @@ localStorage.setItem('DATA', dataParsed)
             fin_count ++ 
             ini_acerto ++
             fin_acerto ++
-            console.log(palavra_usuario)
         }
 
         ini_count -= 5
@@ -219,7 +217,6 @@ localStorage.setItem('DATA', dataParsed)
         ini_acerto -= 5
         fin_acerto -= 5
         inserindo_letra('ENTER')
-        // console.log(localStorage.getItem(`palavra${ind+1}`))
     }
 
 }
