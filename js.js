@@ -38,9 +38,16 @@ let palavra_usuario = [];
 let palavra_usuario2 = [];
 let dataParsed = String(dia) + String(mes) + String(ano)
 let wordList = {
-    '2382022':'OSSOS',
-    '2482022':'AROMA',
-    '2582022':'FUNFA'
+    '2982022':'OSSOS',
+    '3082022':'AROMA',
+    '3182022':'XUCRA',
+    '192022':'VEIAS',
+    '292022':'TRUFA',
+    '382022':'TUNEL',
+    '482022':'TRUCO',
+    '582022':'SORRI',
+    '682022':'JOIAS',
+    '782022':'ABANA',
 }
 let ganhou = false
 let palavra_real = wordList[dataParsed];
