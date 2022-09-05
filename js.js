@@ -9,7 +9,17 @@ let dataParsed = String(dia) + String(mes) + String(ano)
 let wordList = {
     '2382022':'OSSOS',
     '2482022':'AROMA',
-    '2582022':'FUNFA'
+    '2582022':'FUNFA',
+    '2982022':'OSSOS',
+    '3082022':'AROMA',
+    '3182022':'XUCRA',
+    '192022':'VEIAS',
+    '292022':'TRUFA',
+    '392022':'TUNEL',
+    '492022':'TRUCO',
+    '592022':'SORRI',
+    '692022':'JOIAS',
+    '792022':'ABANA',
 }
 let ganhou = false
 let palavra_real = wordList[dataParsed];
@@ -85,6 +95,10 @@ function inserindo_letra(letra_digitada) {
             setTimeout(() => {
               startConfetti();
               ganhou = true
+              let hmodal = document.getElementById('hmodal')
+              let pmodal = document.getElementById('pmodal')
+              hmodal.innerHTML = 'Parabens Voce Ganhou'
+              pmodal.innerHTML = 'Voce é muito bom'
               function abreModal() {
                 $("#myModal").modal({
                   show: true
