@@ -43,11 +43,11 @@ let wordList = {
     '3182022':'XUCRA',
     '192022':'VEIAS',
     '292022':'TRUFA',
-    '382022':'TUNEL',
-    '482022':'TRUCO',
-    '582022':'SORRI',
-    '682022':'JOIAS',
-    '782022':'ABANA',
+    '392022':'TUNEL',
+    '492022':'TRUCO',
+    '592022':'SORRI',
+    '692022':'JOIAS',
+    '792022':'ABANA',
 }
 let ganhou = false
 let palavra_real = wordList[dataParsed];
