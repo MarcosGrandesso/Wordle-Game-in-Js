@@ -8,6 +8,7 @@ let palavra_usuario2 = [];
 let dataParsed = String(dia) + String(mes) + String(ano)
 let wordList = {
     '1492022':'OSSOS',
+    '1392022':'CHAMA',
     '1592022':'AROMA',
     '1692022':'FUNFA',
     '1792022':'OSSOS',
