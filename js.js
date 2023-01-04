@@ -5,25 +5,25 @@ let ano = data.getFullYear()
 let quadrados = document.getElementById("quadrados").children;
 let palavra_usuario = [];
 let palavra_usuario2 = [];
-let dataParsed = String(dia) + String(mes) + String(ano)
-let wordList = {
-    '1492022':'OSSOS',
-    '1392022':'CHAMA',
-    '1592022':'AROMA',
-    '1692022':'FUNFA',
-    '1792022':'OSSOS',
-    '1892022':'AROMA',
-    '1992022':'XUCRA',
-    '2092022':'VEIAS',
-    '2192022':'TRUFA',
-    '2292022':'TUNEL',
-    '2392022':'TRUCO',
-    '2492022':'SORRI',
-    '2592022':'JOIAS',
-    '2692022':'ABANA',
-}
+// let dataParsed = String(dia) + String(mes) + String(ano)
+// let wordList = {
+//     '1492022':'OSSOS',
+//     '1392022':'CHAMA',
+//     '1592022':'AROMA',
+//     '1692022':'FUNFA',
+//     '1792022':'OSSOS',
+//     '1892022':'AROMA',
+//     '1992022':'XUCRA',
+//     '2092022':'VEIAS',
+//     '2192022':'TRUFA',
+//     '2292022':'TUNEL',
+//     '2392022':'TRUCO',
+//     '2492022':'SORRI',
+//     '2592022':'JOIAS',
+//     '422023':'ABANA',
+// }
 let ganhou = false
-let palavra_real = wordList[dataParsed];
+let palavra_real = "JESUS"
 let n = 1;
 let ini_count = 0;
 let fin_count = 6; // para inserçao 
